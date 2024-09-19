@@ -8,15 +8,19 @@ body {
 }
 /* the logo icon*/
 .logo {
-  width: 20px;
+  width: 1.5rem;
+  max-width: 100%;
+  max-height: 90px;
   margin-left: 3rem;
   margin-right: 45rem;
-  margin-top: 1.5rem;
+  white-space: nowrap;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 /* wrapper */
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1450px;
   margin: 0, auto;
 }
 .header {
@@ -26,7 +30,6 @@ body {
   justify-content: flex-end;
   top: 0;
   width: 100%;
-  z-index: 9999;
 }
 /*Navigation*/
 .navigation-lists {
@@ -75,12 +78,13 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
+  color: #666666;
 }
 .karma-content {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 5.5rem;
 }
 /*button*/
 .learnmore {
@@ -102,20 +106,40 @@ body {
 }
 /*social media icon*/
 .social-media img {
-  width: 20px;
+  width: 10px;
+}
+.social-media a {
+  margin: 0 10px;
 }
 /*favicon*/
 .favicon {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 50px, 20px;
 }
-.favicon p {
-}
 .favicon img {
-  width: 100%;
+  width: 80%;
   max-width: 100px;
   border-radius: 10px;
+  margin-left: 8px;
+}
+.favicon p {
+  padding: 10px;
+  margin-right: 22px;
+  margin-left: 5px;
+  color: #666666;
+}
+/*footer*/
+footer {
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+#firstP {
+  color: black;
+  font-size: 0.7rem;
 }
 /**
  * Add your custom styles below
