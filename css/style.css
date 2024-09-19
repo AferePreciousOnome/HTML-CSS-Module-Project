@@ -1,11 +1,122 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+/* the logo icon*/
+.logo {
+  width: 20px;
+  margin-left: 3rem;
+  margin-right: 45rem;
+  margin-top: 1.5rem;
+}
+/* wrapper */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0, auto;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+/*Navigation*/
+.navigation-lists {
+  display: flex;
+  list-style: none;
+  margin-right: 3rem;
+}
+.navigation-item {
+  padding: 0.5rem 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #ff5733;
+}
+.nav-link span {
+  color: black;
+}
+.nav-link span:hover {
+  color: #ff5733;
+}
+/*content*/
+.content {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-image: url(../image/first-background.jpg);
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  background-position: center;
+}
+.content h2 {
+  font-weight: 300;
 }
 
+.karma-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.karma-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+/*button*/
+.learnmore {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 10px, 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.learnmore:hover {
+  background-color: #fff;
+  color: #ff5733;
+}
+/*social media icon*/
+.social-media img {
+  width: 20px;
+}
+/*favicon*/
+.favicon {
+  display: flex;
+  align-items: flex-end;
+  padding: 50px, 20px;
+}
+.favicon p {
+}
+.favicon img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +126,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
