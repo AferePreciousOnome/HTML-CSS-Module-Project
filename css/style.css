@@ -87,23 +87,24 @@ body {
   margin-top: 5.5rem;
 }
 /*button*/
-.learnmore {
+.button1 {
   background-color: #ff5733;
   color: #fff;
-  padding: 10px, 20px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  border-radius: 2px;
-  border: 1px;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem 0.6rem 0.75rem;
+  line-height: 1;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-decoration: none;
 }
-.learnmore:hover {
+.button1:hover {
   background-color: #fff;
   color: #ff5733;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 /*social media icon*/
 .social-media img {
   width: 10px;
@@ -129,6 +130,48 @@ body {
   margin-right: 22px;
   margin-left: 5px;
   color: #666666;
+}
+/*statement*/
+.statement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f5e0d1;
+}
+.statement-image img {
+  width: 100%;
+  max-width: 300px;
+}
+.statement-text blockquote {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.statement-text {
+  text-align: center;
+  margin-right: 25rem;
+}
+.statement-text span {
+  color: #ff5733;
+  font-weight: 500;
+}
+.button2 {
+  background-color: #ff5733;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem 0.6rem 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.button2:hover {
+  background-color: #fff;
+  color: #ff5733;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 /*footer*/
 footer {
