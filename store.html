@@ -27,13 +27,22 @@
       <div class="form-section">
         <h1>Order your Karma wifi <br> device today!</h1>
         <form>
-        <input type="text" placeholder="Last name" required>
-        <input type="text" placeholder="Address" required>
-        <input type="text" placeholder="Address 2">
-        <input type="text" placeholder="City" required>
-        <input type="text" placeholder="Postcode" required>
-          <select>
-            <option>Select your city...</option>
+            <label for="first name">
+              First Name*
+          <input type="text" id="first-name" required></label>
+          <label for="last name">
+            Last Name*
+          <input type="text" id="last-name" required></label>
+          <label>
+            Address*
+          <input type="text"  required></label>
+          <label>
+            Address2
+          <input type="text" ></label>
+          <label for="city">
+            City*
+            <select id="city" name="cities of choice" required>
+           <option value class="placeholder" disabled selected>Select your city...</option>
             <option>Madrid</option>
             <option>Barcelona</option>
             <option>seville</option>
@@ -45,6 +54,7 @@
             <option>Córdoba</option>
             <option>Palma de Mallorca</option>
           </select>
+
             <div class="radio-section">
                 <label>
                 <input type="radio" id="orange" name="colour" value="karma orange">Karma Orange
