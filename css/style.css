@@ -133,24 +133,29 @@ body {
 }
 /*statement*/
 .statement {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #f5e0d1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 6rem;
+  background-color: #f0ddd7;
 }
-.statement-image img {
-  width: 100%;
-  max-width: 300px;
+.statement-image {
+  background-image: url(../level-2/homepage-feature.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 20rem;
 }
 .statement-text blockquote {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
   color: #333;
 }
 .statement-text {
-  text-align: center;
-  margin-right: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rem;
 }
 .statement-text span {
   color: #ff5733;
