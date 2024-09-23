@@ -7,6 +7,7 @@ body {
   color: #808080;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -21,24 +22,26 @@ body {
 /*header*/
 header {
   background-color: #f5f5f5;
-  padding: 1rem 1rem;
   border: 1px solid #ccc;
+  padding: 0 20px;
+  max-width: 100%;
 }
 .logo-item {
-  width: 20px;
-  margin-left: 70px;
+  width: 2.5rem;
+  height: auto;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 nav ul {
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   gap: 2rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 nav ul li a {
@@ -65,7 +68,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 80px;
+  padding-left: 20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -88,7 +91,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   max-width: 100%;
   width: 100%;
@@ -142,7 +145,7 @@ button:hover {
 
 /* form styles*/
 .form-section {
-  width: 100vh;
+  width: 100%;
 }
 .form-name {
   display: flex;
@@ -253,4 +256,42 @@ footer {
 #firstj {
   color: black;
   font-size: 0.7rem;
+}
+@media screen and (max-width: 768px) {
+  .container-store {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .form-section-image {
+    height: 40vh;
+    width: 100%;
+  }
+  .form-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .postcode-city {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .firstname {
+    width: 75%;
+  }
+  .lastname {
+    width: 75%;
+  }
+  .city {
+    width: 75%;
+  }
+  .postcode {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .form-section-image {
+    height: 75vh;
+    width: 100%;
+  }
 }
