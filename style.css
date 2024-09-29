@@ -1,41 +1,48 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 /* the logo icon*/
 .logo {
   width: 2rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
 }
 /* wrapper */
 .container {
+  width: 100%;
+  max-width: 1450px;
   margin: 0, auto;
 }
-.header {
-  background-color: whitesmoke;
+header {
+  background-color: #eee;
 }
-/*Navigation*/
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+/*Navigation*/
 .navigation-lists {
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-evenly;
+  overflow: hidden;
   list-style: none;
-  margin-top: 0.5rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
 }
 .navigation-item {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 .nav-link {
   text-decoration: none;
@@ -53,31 +60,31 @@ nav {
 }
 /*content*/
 .content {
-  font-size: 1.7rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: space-around;
-  background-image: url(../img/first-background.jpg);
+  background-image: url(../image/first-background.jpg);
   background-repeat: no-repeat;
   height: 90vh;
-  background-size: cover;
+  background-size: contain;
   color: #fff;
-  position: relative;
   background-position: center;
 }
 .content h2 {
   font-weight: 300;
-  margin-bottom: 1.3rem;
+}
+.content p {
+  margin-top: 1rem;
 }
 
 .karma-content h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 400;
   color: #666666;
-  margin-bottom: 1.5rem;
 }
 .karma-content {
   display: flex;
@@ -95,8 +102,8 @@ nav {
   line-height: 1;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 2rem;
   text-decoration: none;
+  margin-top: 2rem;
 }
 .button1:hover {
   background-color: #fff;
@@ -107,9 +114,7 @@ nav {
 
 /*social media icon*/
 .social-media img {
-  width: 20px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+  width: 10px;
 }
 .social-media a {
   margin: 0 10px;
@@ -120,6 +125,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px, 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .favicon img {
   width: 80%;
@@ -128,7 +135,6 @@ nav {
   margin-left: 8px;
 }
 .favicon p {
-  padding: 10px;
   margin-right: 22px;
   margin-left: 5px;
   color: #666666;
@@ -139,18 +145,18 @@ nav {
   grid-template-columns: 1fr 2fr;
   margin-bottom: 6rem;
   background-color: #f0ddd7;
-  margin-top: 2rem;
 }
 .statement-image {
   background-image: url(../level-2/homepage-feature.png);
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: auto;
-  height: 20rem;
+  height: 50vh;
+  width: 100%;
+  max-width: 100%;
 }
 .statement-text blockquote {
-  max-width: 70%;
   font-size: 1.7rem;
   margin-bottom: 20px;
   color: #333;
@@ -159,7 +165,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
 }
 .statement-text span {
   color: #ff5733;
@@ -188,57 +196,43 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.8rem;
-}
-hr {
-  max-width: 60%;
-  margin: 0 auto;
-  margin-bottom: 1.3rem;
-  opacity: 0.4;
+  margin: 20px auto;
 }
 #firstP {
   color: black;
   font-size: 0.7rem;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    overflow-x: hidden;
-  }
+
+@media screen and (max-width: 600px) {
   .content {
-    font-size: 1.4rem;
-    width: 100%;
-    height: 400px;
+    height: 500px;
   }
-  .favicon {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    margin-left: 7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    gap: 1rem;
-  }
-  .favicon p {
+  .content-page {
     font-size: 1.2rem;
+  }
+  .second-content {
+    max-width: 100%;
   }
   .statement {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 510px;
   }
-  .statement-text {
-    max-width: 90%;
-  }
-  .statement-image {
-    max-width: 100%;
-  }
-  hr {
-    width: 60%;
-    margin: 0 auto;
+  .favicon {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
-}
-@media screen and (max-width: 550px) {
-  nav {
-    flex-wrap: wrap;
+  .statement-text blockquote {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    height: 20vh;
   }
-  content {
-    font-size: 1rem;
+  .button1 {
+    margin-top: 2rem;
   }
 }
