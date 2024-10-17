@@ -1,0 +1,27 @@
+About this project-Karma store:
+
+This project is a static website for a wifi company,
+
+The project was built with HTML and CSS and deployed with Netlify.
+
+#Project entity
+This project was created for this following entities
+*Place order for your wifi
+*To be able to choose between the following color when ordering your wifi,orange and grey.
+*To be able to collect the user information attribute
+*First name
+*Last name
+*E-mail address
+*address
+*City
+*Postcode
+
+#Challenges faced
+*I had problems styling the store, since it was first time using css grid
+*I faced some Challenges with the Media query.
+
+#link to my project
+https://karma-store-page.netlify.app/
+
+#link to my github page
+https://github.com/AferePreciousOnome/HTML-CSS-Module-Project/tree/store-page
